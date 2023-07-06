@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Sign-up Form</title>
+
+        <link rel="stylesheet" href="./styles.css" />
+        <script src="./script.js" defer></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter&family=Open+Sans&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <div id="splash-container">
+            <img
+                id="hero-art"
+                src="./assets/Knowledge-bro.svg"
+                alt="Studying Image"
+            />
+        </div>
+        <div id="main-container">
+            <div id="sign-up-card">
+                <div id="card-content">
+                    <div id="card-header">Learn faster, focused, smarter</div>
+                    <div id="card-desc">
+                        Join us to learn better study habits and to discover
+                        your most efficient self
+                    </div>
+                    <form action="#" id="form-container">
+                        <div class="form-input-pair">
+                            <label for="f-name" class="inp-label">First Name <span class="green-highlight">*</span></label>
+                            <input type="text" name="f-name" id="f-name" class="inp-field" required/>
+                        </div>
+
+                        <div class="form-input-pair">
+                            <label for="l-name" class="inp-label">Last Name <span class="green-highlight">*</span></label>
+                            <input type="text" name="l-name" id="l-name" class="inp-field" required/>
+                        </div>
+
+                        <div class="form-input-pair">
+                            <label for="email" class="inp-label">Email <span class="green-highlight">*</span></label>
+                            <input type="text" name="email" id="email" class="inp-field" required/>
+                        </div>
+
+                        <div class="form-input-pair">
+                            <label for="phone-num"" class="inp-label">Phone Number</label>
+                            <input type="text" name="phone-num"" id="phone-num" class="inp-field"/>
+                        </div>
+
+                        <div id="password-fields-container">
+                            text
+                        </div>
+                    </form>
+                    <input type="checkbox" name="terms" id="terms" />
+                    <button id="sign-up-btn"></button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

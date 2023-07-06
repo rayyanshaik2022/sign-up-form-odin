@@ -1,0 +1,132 @@
+:root {
+    --bg-color: #f8f8f8;
+    --text-main-color: #202121;
+    --text-secondary-color: #4e5050;
+    --border-color: #cfd9d9;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--bg-color);
+
+}
+
+#splash-container {
+    flex-grow: 1;
+    min-width: 350px;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-shrink: 1;
+}
+
+#main-container {
+    flex-grow: 1;
+    min-width: 350px;
+    max-width: 60%;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-shrink: 2;
+}
+
+#hero-art {
+    width: 75%;
+    min-width: 150px;
+}
+
+#sign-up-card {
+    width: 90%;
+    height: 90%;
+
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+#card-content {
+    padding: 50px 10%;
+    text-align: left;
+}
+
+#card-header {
+    font-weight: 700;
+    font-size: min(7vw, 50px);
+    color: var(--text-main-color);
+}
+
+#card-desc {
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--text-secondary-color);
+}
+
+label {
+    font-weight: 700;
+}
+
+#form-container {
+    padding: 10% 5%;
+    margin: 0 -5%;
+
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+
+    gap: 10%;
+    row-gap: 8px;
+}
+
+.green-highlight {
+    color: green;
+}
+
+.form-input-pair {
+    display: flex;
+    flex-direction: column;
+
+    flex-grow: 1;
+    width: 40%;
+    min-width: 50px;
+}
+
+.wide-input-pair {
+    width: 100%;
+    min-width: 50px;
+}
+
+.inp-label {
+    margin-left: 8px;
+    margin-bottom: 4px;
+}
+
+.inp-field {
+    border: 1px solid var(--border-color);
+    border-radius: 30px;
+    height: 35px;
+
+    text-indent: 10px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+#password-fields-container {
+    border: 1px solid red;
+    padding: 5% 0;
+    width: 100%;
+}
