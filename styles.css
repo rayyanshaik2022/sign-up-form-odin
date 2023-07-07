@@ -3,6 +3,9 @@
     --text-main-color: #202121;
     --text-secondary-color: #4e5050;
     --border-color: #cfd9d9;
+
+    --green-highlight: #51d084;
+    --red-highlight: #d05151;
 }
 
 * {
@@ -93,7 +96,7 @@ label {
 }
 
 .green-highlight {
-    color: green;
+    color: var(--green-highlight);
 }
 
 .form-input-pair {
@@ -116,7 +119,7 @@ label {
 }
 
 .inp-field {
-    border: 1px solid var(--border-color);
+    border: 2px solid var(--border-color);
     border-radius: 30px;
     height: 35px;
 
@@ -125,8 +128,26 @@ label {
     font-weight: 500;
 }
 
+.inp-field:focus {
+    outline: none !important;
+    border: 2px solid var(--green-highlight);
+}
+
+.inp-field:valid {
+    background-color: rgba(0, 255, 123, 0.1);
+}
+
+.inp-field:focus:invalid {
+    outline: none !important;
+    border: 2px solid var(--red-highlight);
+}
+
 #password-fields-container {
-    border: 1px solid red;
-    padding: 5% 0;
+    padding: min(10%, 30px) 0;
     width: 100%;
+
+    display: flex;
+    gap: 10%;
+    row-gap: 8px;
+
 }
