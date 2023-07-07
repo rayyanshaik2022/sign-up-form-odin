@@ -43,29 +43,30 @@
 
                         <div class="form-input-pair">
                             <label for="email" class="inp-label">Email <span class="green-highlight">*</span></label>
-                            <input type="email" name="email" id="email" class="inp-field" pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$" placeholder="johndoe@study.com" required/>
+                            <input type="email" name="email" id="email" class="inp-field" placeholder="johndoe@study.com" required/>
                         </div>
 
                         <div class="form-input-pair">
                             <label for="phone-num" class="inp-label">Phone Number <span class="green-highlight">*</span></label>
-                            <input type="tel" name="phone-num"" id="phone-num" class="inp-field" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" valid="false" placeholder="123-456-7890" required/>
+                            <input type="tel" name="phone-num" id="phone-num" class="inp-field" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" valid="false" placeholder="123-456-7890" required/>
                         </div>
 
                         <div class="form-input-pair">
-                            <label for="pswd"" class="inp-label">Password <span class="green-highlight">*</span></label>
-                            <input type="password" name="pswd"" id="pswd" class="inp-field" pattern=".{6,}" required/>
+                            <label for="pswd" class="inp-label">Password <span class="green-highlight">*</span></label>
+                            <input type="password" name="pswd" id="pswd" class="inp-field" pattern=".{6,}" required/>
                         </div>
                         <div class="form-input-pair">
                             <label for="pswd-conf" class="inp-label">Confirm Password <span class="green-highlight">*</span></label>
-                            <input type="password" name="pswd-conf"" id="pswd-conf" class="inp-field" pattern=".{6,}" required/>
+                            <input type="password" name="pswd-conf" id="pswd-conf" class="inp-field" pattern=".{6,}" required/>
                         </div>
+                        <p class="non-match"></p>
                     </form>
                     <div id="last-inp-container">
                         <div id="terms-pair">
                             <input type="checkbox" name="terms" id="terms" />
                             <label>I accept the <a href="#">terms and conditions</a><span class="green-highlight">*</span></label>
                         </div>
-                        <button id="sign-up-btn">Sign-Up</button>
+                        <button type="submit" id="sign-up-btn">Sign-Up</button>
                     </div>
                 </div>
             </div>
