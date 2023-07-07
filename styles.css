@@ -26,7 +26,7 @@ body {
 #splash-container {
     flex-grow: 1;
     min-width: 350px;
-    height: 100vh;
+    height: 95vh;
 
     display: flex;
     justify-content: center;
@@ -197,4 +197,22 @@ a {
     text-align: center;
     color: var(--red-highlight);
     font-weight: 700;
+}
+
+footer {
+    margin-top: auto;
+    height: 30px;
+
+    text-align: center;
+    color: var(--text-main-color);
+
+    min-width: 50vw;
+}
+
+#github-link {
+    transform: translateY(3px) translateX(4px);
+}
+
+#github-link:hover {
+    transform: translateY(3px) translateX(4px) scale(1.2);
 }
